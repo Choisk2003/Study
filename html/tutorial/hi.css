@@ -1,0 +1,16 @@
+html{
+    background-color: pink;
+}
+
+input{
+    font-size: 2rem;
+    color:rebeccapurple;
+    background-color: plum;
+    margin-bottom: 0px;
+}
+
+#pTag{
+    font-size: 3rem;
+    color: red;
+    margin-top: 0px;
+}
