@@ -1,0 +1,98 @@
+html{
+    background-color:  #DBAD5D;
+}
+
+h1{
+    text-align: center;
+    font-family: 'Luckiest Guy', cursive;
+    font-size: 3rem;
+}
+
+#inputs{
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.inputElements{
+    background-color: #D19B43;
+    border: none;
+    height: 25px;
+}
+
+#contents{
+    width: 52.3%;
+    text-align: left;
+}
+
+#date{
+    width: 11%;
+    margin-left: 2%;
+}
+
+#time{
+    width: 11%;
+    margin-left: 2%;
+}
+
+#submitBtn{
+    width: 11%;
+    margin-left: 2%;
+}
+
+#mainDiv{
+    margin-top: 10px;
+    margin-left: 10%;
+    margin-right: 10%;
+    height: auto;
+    width: auto;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    background-color: #85622A;
+}
+
+.schedules{
+    background-color: #D19B43;
+    height: 40px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    border-radius: 10px;
+}
+
+.scheduleDetails{
+    display: inline-block;
+    position: relative;
+}
+
+#scheduleContents{
+    left:10px;
+    width: 80%;
+}
+
+#scheduleDate{
+    width:7%;
+    font-size: 0.7rem;
+}
+
+#scheduleTime{
+    width:7%;
+    font-size: 0.7rem;
+}
+
+#scheduleDel {
+    position: relative;
+    bottom:0;
+    top:4px;
+    margin-left:3%;
+    width: 25px;
+    background-color: #D19B43;
+    padding:1px;
+    padding-bottom:0.5px;
+}
+
+#delPng{
+    position: relative;
+    top:1px;
+    left:1px;
+    width: 23px;
+}
