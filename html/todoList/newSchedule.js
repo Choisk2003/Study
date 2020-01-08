@@ -50,6 +50,6 @@ function printSchedule(){
     arrSize = getArrSize();
     for (let i = 0; i < arrSize; i++) {
         scheduleInfo = JSON.parse(scheduleInfos[i]);
-        mainDiv.innerHTML += "<div class='schedules' id='schedule" + i + "'>" + " <div class='scheduleDetails' id='scheduleContents'>" + scheduleInfo.content + "</div>" + "<div class='scheduleDetails' id='scheduleDate'>" + scheduleInfo.date + "</div>" + "<div class='scheduleDetails' id='scheduleTime'>" + scheduleInfo.time + "</div>" + "<btn class='scheduleDetails' id='scheduleDel' onclick='del()'><img id='delPng' src='del.png' onclick='del()'></btn>" + "</div>";
+        mainDiv.innerHTML += "<div class='schedules' id='schedule" + i + "'>" + " <div class='scheduleDetails' id='scheduleContents'>" + scheduleInfo.content + "</div>" + "<div class='scheduleDetails' id='scheduleDate'>" + scheduleInfo.date + "</div>" + "<div class='scheduleDetails' id='scheduleTime'>" + scheduleInfo.time + "</div>" + "<btn class='scheduleDetails scheduleDel' onclick='del(this)'><img class='delPng' src='del.png'></btn>" + "</div>";
     }
 }

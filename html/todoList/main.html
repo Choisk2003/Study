@@ -1,25 +1,28 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8"/>
-        <link rel="icon" type="image/png" href="icon.png">
-        <link rel="stylesheet" type="text/css" href="main.css">
-        <link href="https://fonts.googleapis.com/css?family=Luckiest+Guy&display=swap" rel="stylesheet">
-        <title>Todo List</title>
-    </head>
-    <body>
-        <h1>TODO LIST</h1>
-        <div id="inputs">
-            <input class="inputElements" id="contents" type='text' placeholder='일정을 입력하세요.'>
-            <input class="inputElements" id="date" type='date'>
-            <input class="inputElements" id="time" type='time'>
-            <input class="inputElements" id="submitBtn" type="button" value="추가하기" onclick="newSchedule()">
-            <input class="inputElements" type="button" value="초기화" onclick="clearAll()">
-        </div>
-        <div id="mainDiv"></div>
-        <script type="text/javascript" src="localStorageUse.js"></script>    
-        <script type="text/javascript" src="newSchedule.js"></script> 
-        <script type="text/javascript" src="setNow.js"></script>    
-        <script type="text/javascript" src="deleteSchedule.js"></script>
-    </body>
+
+<head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/png" href="icon.png">
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <link href="https://fonts.googleapis.com/css?family=Luckiest+Guy&display=swap" rel="stylesheet">
+    <title>Todo List</title>
+</head>
+
+<body>
+    <h1>TODO LIST</h1>
+    <div id="inputs">
+        <input class="inputElements" id="contents" type='text' placeholder='일정을 입력하세요.'>
+        <input class="inputElements" id="date" type='date'>
+        <input class="inputElements" id="time" type='time'>
+        <input class="inputElements" id="submitBtn" type="button" value="추가하기" onclick="newSchedule()">
+        <input class="inputElements" type="button" value="초기화" onclick="clearAll()">
+    </div>
+    <div id="mainDiv"></div>
+</body>
+<script type="text/javascript" src="localStorageUse.js"></script>
+<script type="text/javascript" src="newSchedule.js"></script>
+<script type="text/javascript" src="setNow.js"></script>
+<script type="text/javascript" src="deleteSchedule.js"></script>
+
 </html>
