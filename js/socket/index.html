@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+  </head>
+  <body>
+    <div
+      style="width: 600px; height: 400px; border: 1px solid black;"
+      id="logs"
+    ></div>
+    <form>
+      <label>message</label>
+      <input type="text" id="msge" />
+      <button type="submit">send</button>
+    </form>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script>
+      $(function () {
+        var socket = io();
+
+        socket.emit("login", {
+          name: makeRandomName(),
+        });
+
+        socket.on("login", function (data) {
+          $("#logs").append(
+            "<div><strong>" + data + "</strong> has joined</div>"
+          );
+        });
+
+        socket.on("chat", function (data) {
+          $("#logs").append(
+            "<div><strong>" + data.name + " :  </strong>" + data.msg + "</div>"
+          );
+        });
+
+        $("form").submit(function (e) {
+          e.preventDefault();
+          var $msgForm = $("#msge");
+
+          socket.emit("chat", { msg: $msgForm.val() });
+          $msgForm.val("");
+        });
+
+        function makeRandomName() {
+          var name = "";
+          var possible = "abcdefghijklmnopqrstuvwxyz";
+          for (var i = 0; i < 3; i++) {
+            name += possible.charAt(
+              Math.floor(Math.random() * possible.length)
+            );
+          }
+          return name;
+        }
+      });
+    </script>
+  </body>
+</html>
